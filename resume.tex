@@ -1,0 +1,154 @@
+\documentclass[a4paper,10pt]{article}
+
+% Make ATS friendly
+\pdfgentounicode=1
+
+% Remove section numbering
+\setcounter{secnumdepth}{0}
+
+% Packages
+\usepackage{geometry}
+\usepackage[bookmarks=false]{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+
+% Colour code
+\definecolor{Fuchsia}{HTML}{582C83}
+
+% Geometry
+\geometry{
+    a4paper,
+    top=0.4cm,
+    bottom=0.4cm,
+    left=0.4cm,
+    right=0.4cm
+}
+
+% Hyperlink setup
+\hypersetup{ 
+    colorlinks=true,
+    urlcolor=blue,
+    pdftitle={My Resume},
+}
+
+% Document
+\begin{document}
+
+% Full name
+\begin{center}
+    {\Huge\scshape {\color{Fuchsia}\textbf {SHREE HARI ANBAZHAGAN}}}
+\end{center}
+\vspace{-6mm}
+% Address
+\begin{center}
+    \small{Chennai, Tamil Nadu - 600106, India}
+\end{center}
+\vspace{-6mm}
+% Contact details
+\begin{center}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c r @{}}
+        \small{\faLinkedin \ \href{https://www.linkedin.com/in/a-shreehari/}{linkedin.com/in/a-shreehari}} &
+        \small{\faIcon{mobile-alt} \ \href{tel:+917667899999}{+91 7667899999}} &
+        \small{\faEnvelope \ \href{mailto:shreeharianbazhagan@gmail.com}{shreeharianbazhagan@gmail.com}} 
+    \end{tabular*}
+\end{center}
+
+\hrule
+\vspace{-4mm}
+% Experience details
+\section{\scshape\color{Fuchsia}{\faUserTie\ \textbf EXPERIENCE}}
+% FTE Comcast
+\textbf{Comcast} \href{https://corporate.comcast.com/}{\faIcon{link}} \hfill
+\textit{July 2023 - present} \\
+\textbf{Development Engineer 1}, Data Engineer \hfill \textit{Chennai, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item Led the development and maintenance of ETLs for internal and external teams, integrating Kafka with AWS Redshift, ensuring near-zero downtime and improved system reliability.
+    \vspace{-2mm}
+    \item Architected and deployed multiple solutions using \textbf{infrastructure as code (IaC)} and \textbf{draw.io}, following best practices for \textbf{scalability, security, and automation}, resulting in a \textbf{30\% reduction in deployment time and effort}.
+    \vspace{-2mm}
+    \item Designed and deployed data synchronization tools (\textbf{EnvSyncer}) to ensure consistency across \textbf{Data Warehouses}, implementing anomaly detection with AWS Lookout Metrics, and building \textbf{reconciliation frameworks} that improved data accuracy by \textbf{40\%}.
+\end{itemize}
+\vspace{-2mm}
+% Intern Comcast
+\textbf{Comcast} \href{https://drive.google.com/file/d/1pad_OUtVNHKm3s1Kb-_xwyZAXJBjz7gX/view?usp=sharing}{\faIcon{link}} \hfill \textit{Jan 2023 - June 2023} \\
+\textbf{Intern} \hfill \textit{Chennai, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item Developed a \textbf{Slack notification system} to monitor ETL runs and job status, providing real-time alerts and daily cost breakdowns to enhance operational efficiency.
+    \vspace{-2mm}
+    \item Assisted and leant of a Data Warehouse (DWH) application to create a single source of truth for organizational data.
+\end{itemize}
+\vspace{-2mm}
+% Intern L&M
+\textbf{Lasso and Marquee Design Solutions} \href{https://drive.google.com/file/d/1fMTBkQUhU6_34D5mxVZRf7wBHGMJPdVi/view?usp=sharing}{\faIcon{link}} \hfill \textit{June 2019 - July 2019} \\
+\textbf{Intern} \hfill \textit{Chennai, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item During my internship program, I was hardworking, punctual, and eager to learn how an IT company works.
+\end{itemize}
+
+\hrule
+\vspace{-4mm}
+% Education details
+\section{\scshape\color{Fuchsia}{\faGraduationCap\ \textbf EDUCATION}}
+% IITM
+\textbf{Indian Institute of Technology Madras} \href{https://drive.google.com/file/d/1HUZf7LIsTZaPjUkf3tKMAnduHmgObdS1/view?usp=sharing}{\faIcon{link}} \hfill \textit{Sep 2023 - present} \\
+\textbf{Diploma in Data Science} \hfill \textit{Chennai, India} \\
+Gaining expertise in analytics, machine learning, and big data technologies through the program. \\
+% sastra
+\textbf{SASTRA Deemed University} \href{https://drive.google.com/file/d/1phkkQpvXzo3_0dZZnujCL_nOU1YJfxKO/view?usp=sharing}{\faIcon{link}} \hfill \textit{July 2019 - May 2023} \\
+\textbf{Bachelor of Technology in Computer Science \& Engineering,} \hfill \textit{Thanjavur, India} \\
+Graduated First Class with Distinction. \\
+
+\hrule
+\vspace{-4mm}
+% Project details
+\section{\scshape\color{Fuchsia}{\faLaptopCode\ \textbf PROJECTS}}
+% IITM MLP project
+\textbf{IITM Machine learning project} \href{https://github.com/ShreehariA/IITM_MLP_Project}{\faIcon{link}} \hfill \textit{Sep 2024 - Nov 2024}
+\vspace{-2mm}
+\begin{itemize}
+    \item Built models to predict bank telemarketing success.
+    \vspace{-2mm}
+    \item Performed \textbf{EDA and preprocessing} based on insights, \textbf{trained 4 models}, and achieved the best results with an \textbf{accuracy of 87\%} and a macro F1 score of 0.75, with notable performance in precision and recall for the 'no' class.
+\end{itemize}
+\vspace{-2mm}
+% G20 library summit
+\textbf{Sentiment Analysis and Topic Modeling for Tweets} \href{https://github.com/ShreehariA/G20_Library_Summit}{\faIcon{link}} \hfill \textit{Dec 2023 - Feb 2024}
+\vspace{-2mm}
+\begin{itemize}
+    \item Contributed to the ML project "Inside Out – Understanding User Emotions," focusing on sentiment and topic analysis of tweets, with findings presented at the \textbf{G20 Library Summit 2024}.
+    \vspace{-2mm}
+    \item Developed an Excel sheet with base data and analysis results, covering sentiment analysis, topic modeling, and engagement metrics. incorporating visualizations like heat maps and graphs to highlight data trends.
+    \vspace{-2mm}
+    \item Used \textbf{pysentimiento} for sentiment analysis and \textbf{cardiffnlp/tweet-topic-21-multi} for topic modeling, achieving \textbf{94.53\% accuracy} in extracting insights from tweets.
+\end{itemize}
+\vspace{-2mm}
+% SASTRA project
+\textbf{Diabetes prediction} \href{https://github.com/ShreehariA/diabetes-pred}{\faIcon{link}} \hfill \textit{Sep 2022 - Dec 2023}
+\vspace{-2mm}
+\begin{itemize}
+    \item Developed a \textbf{Django web application} for \textbf{diabetes prediction}, leveraging multiple \textbf{machine learning algorithms} (\textbf{Logistic Regression, Random Forest, Adaboost}, etc.) to provide accurate predictions based on user health metrics.
+    \vspace{-2mm}
+    \item Integrated \textbf{PDF report generation} and \textbf{SMS notification features} within the application, with the model achieving an \textbf{accuracy score of 0.82 for Random Forest} and \textbf{0.80 for Adaboost}, enhancing user experience by delivering prediction results in both \textbf{downloadable} and \textbf{mobile-friendly formats}.
+\end{itemize}
+\vspace{-2mm}
+% Personal project
+\textbf{Helpers} \href{https://github.com/ShreehariA/helpers}{\faIcon{link}} \hfill \textit{Sep 2023 - present}
+\vspace{-2mm}
+\begin{itemize}
+    \item Created a personal project involving \textbf{reusable helper classes} for \textbf{AWS, API integration, Kafka, and Slack}, improving system automation and data operations.
+    \vspace{-2mm}
+    \item Developed efficient \textbf{data pipelines} with \textbf{S3, Athena, Redshift, and Kafka integrations} in a personal project, optimizing \textbf{data retrieval, transformation}, and \textbf{real-time streaming} for enterprise applications.
+\end{itemize}
+
+\hrule
+\vspace{-4mm}
+% Techinical skills details
+\section{\scshape\color{Fuchsia}{\faTools\ \textbf TECHNICAL SKILLS}}
+\textbf{Programming}: Python, SQL, Terraform (Infrastructure as Code), shell commands (basic), YAML, JSON. \\
+\textbf{Tools and Frameworks}: AWS (AWS Lambda, Glue, S3, Redshift, Athena, IAM (Roles, Policies), Secrets Manager, CloudWatch), Boto3 (AWS API), REST API, PostgreSQL
+, Docker, Kafka, Machine Learning (ML), Git, VSCode, JIRA, Excel.
+\end{document}
