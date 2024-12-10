@@ -1,5 +1,5 @@
 # Resume
-A place for my LaTeX resume
+A place for my LaTeX resumes
 
 ## What is LaTeX?
 
