@@ -1,0 +1,259 @@
+\documentclass[a4paper,10pt]{article}
+% Make ATS friendly
+\pdfgentounicode=1
+
+% Remove section numbering
+\setcounter{secnumdepth}{0}
+
+% Packages
+\usepackage{geometry}
+\usepackage[bookmarks=false]{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{enumitem}
+
+% Colour code
+\definecolor{Fuchsia}{HTML}{582C83}
+
+% Geometry
+\geometry{
+    a4paper,
+    top=0.4cm,
+    bottom=0.4cm,
+    left=0.4cm,
+    right=0.4cm
+}
+
+% Hyperlink setup
+\hypersetup{ 
+    colorlinks=true,
+    urlcolor=blue,
+    pdftitle={My Resume},
+}
+
+% Document
+\begin{document}
+
+% Full name
+\begin{center}
+    {\Huge\scshape {\color{Fuchsia}\textbf {SHREE HARI ANBAZHAGAN}}}
+\end{center}
+\vspace{-4mm}
+% Address
+\begin{center}
+    \small{Chennai, Tamil Nadu - 600106, India}
+\end{center}
+\vspace{-4mm}
+% Contact details
+\begin{center}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c r @{}}
+        \small{\faLinkedin \ \href{https://www.linkedin.com/in/a-shreehari/}{linkedin.com/in/a-shreehari}} &
+        \small{\faIcon{mobile-alt} \ \href{tel:+917667899999}{+91 7667899999}} &
+        \small{\faEnvelope \ \href{mailto:shreeharianbazhagan@gmail.com}{shreeharianbazhagan@gmail.com}} 
+    \end{tabular*}
+\end{center}
+
+\hrule
+% Experience details
+\section{\scshape\color{Fuchsia}{\faUserTie\ \textbf EXPERIENCE}}
+% FTE Comcast
+\textbf{Comcast} \href{https://corporate.comcast.com/}{\faIcon{link}} \hfill
+\textit{July 2023 - present} \\
+\textbf{Development Engineer 1}, Data Engineer \hfill \textit{Chennai, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item Developed ETLs integrating Kafka with AWS Redshift, achieving near-zero downtime and improving reliability.
+    \vspace{-2mm}
+    \item Architected scalable, secure solutions with \textbf{IaC} tools and \textbf{draw.io}, reducing deployment time by \textbf{30\%}.
+    \vspace{-2mm}
+    \item Designed \textbf{EnvSyncer} to sync data between environments, improving data availability.
+    \vspace{-2mm}
+    \item Built \textbf{reconciliation frameworks} to validate data integrity between the source and Data Warehouse, improving data accuracy by \textbf{40\%}.
+    \vspace{-2mm}
+    \item Introduced anomaly detection using \textbf{AWS Lookout for Metrics}, then integrated it with our in-house application, enhancing user experience.
+    \vspace{-2mm}
+    \item Led \textbf{knowledge transfer} on the Data Warehouse and existing frameworks, wrote documentation to address gaps, and enabled team on-boarding.
+    \vspace{-2mm}
+    \item Assisted the \textbf{Service Reliability Engineering} team in refining \textbf{deployment strategies} through testing and performance enhancements.
+\end{itemize}
+% Intern Comcast
+\textbf{Comcast} \href{https://drive.google.com/file/d/1pad_OUtVNHKm3s1Kb-_xwyZAXJBjz7gX/view?usp=sharing}{\faIcon{link}} \hfill \textit{Jan 2023 - June 2023} \\
+\textbf{Intern} \hfill \textit{Chennai, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item Developed a \textbf{Slack notification system} to monitor ETL runs, job status. Providing real-time alerts and daily cost breakdowns to enhance operational efficiency.
+    \vspace{-2mm}
+    \item Contributed to the \textbf{Data Warehouse} application to create a single source of truth for organizational data.
+    \vspace{-2mm}
+    \item Learned about Comcast's \textbf{construction ecosystem}, Wi-Fi connectivity processes, business model, and the \textbf{significance of data} in driving business decisions.
+\end{itemize}
+% Intern L&M
+\textbf{Lasso and Marquee Design Solutions} \href{https://drive.google.com/file/d/1fMTBkQUhU6_34D5mxVZRf7wBHGMJPdVi/view?usp=sharing}{\faIcon{link}} \hfill \textit{June 2019 - July 2019} \\
+\textbf{Intern} \hfill \textit{Chennai, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item The internship provided valuable insights into IT operations, teamwork and professional communication.
+\end{itemize}
+\vspace{2mm}
+
+\hrule
+% Education details
+\section{\scshape\color{Fuchsia}{\faGraduationCap\ \textbf EDUCATION}}
+% IITM
+\textbf{Indian Institute of Technology Madras} \href{https://drive.google.com/file/d/1HUZf7LIsTZaPjUkf3tKMAnduHmgObdS1/view?usp=sharing}{\faIcon{link}} \hfill \textit{Sep 2023 - present} \\
+\textbf{Diploma in Data Science} \hfill \textit{Chennai, India} \\
+Gaining expertise in analytics, machine learning, and big data technologies through the program. \\
+\\
+% sastra
+\textbf{SASTRA Deemed University} \href{https://drive.google.com/file/d/1phkkQpvXzo3_0dZZnujCL_nOU1YJfxKO/view?usp=sharing}{\faIcon{link}} \hfill \textit{July 2019 - May 2023} \\
+\textbf{Bachelor of Technology in Computer Science \& Engineering,} \hfill \textit{Thanjavur, India} \\
+Achieved First Class with Distinction. \\
+
+\hrule
+% Project details
+\section{\scshape\color{Fuchsia}{\faLaptopCode\ \textbf PROJECTS}}
+% IITM MLP project
+\textbf{IITM Machine learning project} \href{https://github.com/ShreehariA/IITM_MLP_Project}{\faIcon{link}} \hfill \textit{Sep 2024 - Nov 2024}
+\vspace{-2mm}
+\begin{itemize}
+    \item Built models to predict bank telemarketing success.
+    \vspace{-2mm}
+    \item Performed \textbf{EDA and preprocessing}, \textbf{trained 4 models}(Logistic Regression, k-Nearest Neighbour, RandomForest, HistGradientBoostingClassifier), achieving \textbf{87\% accuracy} and 0.75 F1 macro score.
+    \vspace{-2mm}
+    \item Identified bias in the data skewed toward negatives, leading to challenges in achieving better model performance.
+\end{itemize}
+% G20 library summit
+\textbf{Sentiment Analysis and Topic Modeling for Tweets} \href{https://github.com/ShreehariA/G20_Library_Summit}{\faIcon{link}} \hfill \textit{Dec 2023 - Feb 2024}
+\vspace{-2mm}
+\begin{itemize}
+    \item Contributed to the "Inside Out - Understanding User Emotions" ML project, analyzing tweet sentiments and topics, presented my findings at \textbf{G20 Library Summit 2024}.
+    \vspace{-2mm}
+    \item Compiled findings in Excel sheets with \textbf{sentiment analysis, topic modeling, engagement metrics, heat maps, and graphs to visualize data trends}.
+    \vspace{-2mm}
+    \item Used \textbf{pysentimiento} and \textbf{cardiffnlp/tweet-topic-21-multi} to achieve \textbf{94.53\% accuracy} in tweet insight extraction.
+\end{itemize}
+% SASTRA project
+\textbf{Diabetes prediction} \href{https://github.com/ShreehariA/diabetes-pred}{\faIcon{link}} \hfill \textit{Jan 2022 - June 2022}
+\vspace{-2mm}
+\begin{itemize}
+    \item Developed \textbf{Django web application}, utilizes \textbf{machine learning algorithms} to predict using \textbf{basic health metrics}.
+    \vspace{-2mm}
+    \item Compares each prediction with \textbf{six different machine learning models}(Decision Tree, Gaussian Naive Bayes, k-Nearest Neighbour, Logistic Regression, Adaboost, Random Forest) and publishes only the one with the best accuracy.
+    \vspace{-2mm}
+    \item Integrated \textbf{PDF report generation} and \textbf{SMS notification} features, with \textbf{Random Forest achieving 0.87 accuracy}, delivering results in downloadable and mobile-friendly formats.
+\end{itemize}
+\textbf{Other projects}
+\vspace{-2mm}
+\begin{itemize}
+    \item \textbf{Helper} \href{https://github.com/ShreehariA/helpers}{\faIcon{link}} Created reusable helper classes for AWS, API integration, Kafka, and Slack.
+    \vspace{-2mm}
+    \item \textbf{IITM Business Data Management project} \href{https://github.com/ShreehariA/IITM_BDM_Project}{\faIcon{link}} Tackles business challenges through data management and analysis.
+    \vspace{-2mm}
+    \item \textbf{Resume} \href{https://github.com/ShreehariA/Resume}{\faIcon{link}} using LaTeX.
+\end{itemize}
+
+% AWARDS & ACHIEVEMENTS
+\section{\scshape\color{Fuchsia}{\faTrophy\ \textbf{AWARDS \& ACHIEVEMENTS}}}
+\begin{itemize}
+    \item \textbf{Champ Award}, Comcast (Q4 2023, Q1 2024) \hfill \textit{2023 - 24}\\
+    Awarded consecutively for outstanding performance and contributions.
+    \vspace{-2mm}
+    \item \textbf{Technology \& Engineering Emmy Award}, Comcast \href{https://corporate.comcast.com/press/releases/comcast-wins-technology-engineering-emmy-innovation-sports-viewing}{\faIcon{link}} \hfill \textit{Feb, 2024}\\
+    Part of the team recognized for innovation in sports viewing technology. 
+    \vspace{-2mm}
+    \item \textbf{Good Presentation Award}, \textbf{G20 Library Summit} \href{https://www.linkedin.com/posts/a-shreehari_ml-huggingface-g20librarysummit-activity-7163032877201371137-ZS8n?utm_source=share&utm_medium=member_desktop}{\faIcon{link}} \hfill \textit{Feb 8, 2024}\\
+    Recognized for an impactful presentation on technology integration in libraries.
+\end{itemize}
+
+\hrule
+% Workshops
+\section{\scshape\color{Fuchsia}{\faBookOpen \ \textbf WORKSHOPS}}
+\begin{itemize}
+    \item Organized a successful \textbf{SQL Workshop Fundraiser} \href{https://www.linkedin.com/posts/a-shreehari_fundraiser-sqlworkshop-communitysupport-activity-7239111496339746816-VhVM?utm_source=share&utm_medium=member_desktop}{\faIcon{link}} \hfill \textit{Sep 8, 2024} Raised funds for \textbf{Bhumi} to support shelter children through the LEM program.
+    \vspace{-2mm}
+    \item Attended the \textbf{"Responsible \& Safe AI" Workshop} at \textbf{IIT Madras} \href{https://www.linkedin.com/posts/activity-7132008217424916480-G6g2?utm_source=share&utm_medium=member_desktop}{\faIcon{link}} \hfill \textit{Nov 19, 2023} \\ 
+    Explored topics like legal bias, AI attacks, and unlearning, hosted by CeRAI.
+    \vspace{-2mm}
+    \item Participated in a \textbf{Web Development Workshop} conducted by \textbf{Sastra University} \hfill \textit{Aug 5–7, 2022} \\
+    A three-day hands-on program focused on building web applications using Django and Python.
+\end{itemize}
+
+\hrule
+% PRESENTATIONS
+\hrule
+% PRESENTATIONS
+\section{\scshape\color{Fuchsia}{\faChalkboardTeacher\ \textbf PRESENTATIONS}}
+\begin{itemize}
+    \item Shared insights at \textbf{G20 Library Summit} \href{https://www.linkedin.com/posts/a-shreehari_g20librarysummit-useremotions-technologyintegration-activity-7163759412841529344-ii6j?utm_source=share&utm_medium=member_desktop}{\faIcon{link}} \hfill \textit{Feb 7-9, 2024}\\
+    Where technology integration in libraries, applying sentiment analysis and topic modeling on X / Twitter data.  
+    \vspace{-2mm}
+    \item Discussed data engineering solutions at \textbf{Comcast}\hfill \textit{2024}\\
+    Focusing on performance optimizations and key insights.
+    \vspace{-2mm}
+    \item Demonstrated the \textbf{Diabetes Prediction System} project \hfill \textit{2022}\\
+    Highlighting multi-model machine learning techniques and a user-centric web app. 
+\end{itemize}
+
+\hrule
+% SEMINARS & CONFERENCES
+\hrule
+% SEMINARS & CONFERENCES
+\section{\scshape\color{Fuchsia}{\faUsers \ \textbf SEMINARS \& CONFERENCES}}
+\begin{itemize}
+    \item Attended the \textbf{AWS User Group Chennai} session on \textbf{GenAI and serverless technologies} \href{https://www.linkedin.com/posts/a-shreehari_awsusergroupchennai-aws-serverless-activity-7238775038324129792-rlYK?utm_source=share&utm_medium=member_desktop}{\faIcon{link}} \hfill \textit{Sep 3, 2024} \\ 
+    Speaker \textbf{Eric Johnson} provided valuable insights on serverless and GenAI.
+    \vspace{-2mm}
+    \item Participated in \textbf{IIT E-Summit 2024} \href{https://www.linkedin.com/posts/jayasri-anbazhagan-514684265_iitm-e-activity-7174416598450020352-jMtA?utm_source=share&utm_medium=member_desktop}{\faIcon{link}} \hfill \textit{Mar 9, 2024} \\ 
+    Enjoyed talks by venture capitalists \textbf{Jivraj Singh Sachar}, \textbf{Ranjith Menon}, and \textbf{Vaibhav Domkundwar}.
+    \vspace{-2mm}
+    \item Attended the \textbf{AWS Awesome Day} conference \href{https://www.linkedin.com/posts/activity-7077135676516798464-hqoG?utm_source=share&utm_medium=member_desktop}{\faIcon{link}} \hfill \textit{June 8, 2024} \\ 
+    Sessions focused on machine learning, serverless, and big data analytics.
+\end{itemize}
+
+\hrule
+% Techinical skills
+\section{\scshape\color{Fuchsia}{\faTools\ \textbf TECHNICAL SKILLS}}
+\textbf{Programming}: Python, SQL, Terraform (Infrastructure as Code), shell commands (basic), YAML, JSON. \\
+\textbf{Tools and Frameworks}: AWS (AWS Lambda, Glue, S3, Redshift, Athena, IAM (Roles, Policies), Secrets Manager, CloudWatch), Boto3 (AWS API), REST API, PostgreSQL
+, Docker, Kafka, Machine Learning (ML), Git, VSCode, JIRA, Excel.
+\vspace{3mm}
+
+\hrule
+% volunteering & Extracurricular 
+\section{\scshape\color{Fuchsia}{\faHandsHelping\ \textbf VOLUNTEERING \& EXTRACURRICULAR}}
+% CC at Bhumi
+\textbf{Bhumi} \href{https://www.bhumi.ngo/}{\faIcon{link}} \hfill \textit{Sep 2024 - present} \\
+\textbf{Centre Coordinator} \hfill \textit{Chennai, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item Organized workshops, events, and additional classes to meet children's needs, including a \textbf{SQL workshop} to raise funds for better living conditions and sports events to foster stronger community engagement.
+\end{itemize}
+\vspace{-2mm}
+% volunteer at Bhumi
+\textbf{Bhumi} \hfill \textit{July 2024 - Sep 2024} \\
+\textbf{LEM Volunteer} \hfill \textit{Chennai, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item As part of the Ignite \textbf{Little Einstein Mathematics} program, we teach math to children in shelter homes using interactive and hands-on methods.
+\end{itemize}
+\vspace{-2mm}
+% NSS leader sastra 
+\textbf{Sastra} \hfill \textit{July 2022 - June 2024} \\
+\textbf{NSS Leader} \hfill \textit{Thanjavur, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item \textbf{Increased annual blood donation camps} and supported local temple events for crowd control and festival management.
+    \vspace{-2mm}
+    \item Strengthened community ties by addressing local hospital needs and supporting the temple, earning respect and recognition.
+\end{itemize}
+\vspace{-2mm}
+% NSS sastra
+\textbf{Sastra} \hfill \textit{Aug 2019 - June 2022} \\
+\textbf{NSS Volunteer} \hfill \textit{Thanjavur, India}
+\vspace{-2mm}
+\begin{itemize}
+    \item Participating in community initiatives such as blood donation camps and shelter home cleanups.
+\end{itemize}
+\end{document}
+
+
